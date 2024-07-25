@@ -35,18 +35,18 @@ function Section1() {
         </div>
       </div>
 
-      <div className="w-full lg:w-[50%]  mt-[-85px] max-md:mt-[15px] max-lg:mt-[20px] 2xl:mt-0">
+      <div className="w-full lg:w-[50%]  mt-[-85px] max-md:mt-[15px] max-lg:mt-[20px] 2xl:mt-0" id="quoteForm">
         <div className="w-full md:pl-[37px] md:mt-[108px]">
           <div className="absolute top-0 left-0 w-full  bg-black rounded-[20px] z-0 transform translate-x-2 translate-y-2"></div>
           <div className="bg-white p-8 rounded-[20px] shadow-lg relative z-10 w-full ">
-            <h2 className="text-xl font-bold text-orange-500 mb-4">
+            <h2 className="text-xl font-bold text-orange-500 mb-4" >
               Kickstart your business!!
             </h2>
             <p className="mb-4 text-gray-700">
               Fill in the details below and our team will get back to you in no
               time
             </p>
-            <form>
+            <form >
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
                   <label className="block text-gray-700">Name</label>
@@ -89,12 +89,14 @@ function Section1() {
                   </select>
                 </div>
               </div>
+
               <button
                 type="submit"
                 className="bg-orange-500 text-white py-2 px-4 rounded w-full mt-4"
               >
                 Get a Quote
               </button>
+
             </form>
           </div>
         </div>

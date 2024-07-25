@@ -10,9 +10,13 @@ function Header() {
         <img src={digilligent} alt="App Logo" className="h-12" />
       </div>
       <div className="flex space-x-4">
-        <button className="bg-orange-500 text-white py-2 px-4 rounded">
+        
+
+      <a href="#quoteForm" className="bg-orange-500 text-white py-2 px-4 rounded ">
+
           Get a Quote
-        </button>
+
+        </a>
         <button className="rounded-[6px] bg-[#5BF877] w-10 h-10 flex items-center justify-center">
           <img src={whatsapp} alt="WhatsApp Logo" />
         </button>

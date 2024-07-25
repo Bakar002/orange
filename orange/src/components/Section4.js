@@ -17,10 +17,10 @@ function Section4() {
           consultation and let's get started on your next big idea!
         </p>
         <div className="flex flex-col gap-5">
-          <button className="bg-orange-500 hover:bg-orange-600 text-white font-md py-3 px-8 rounded-[10px] flex items-center mx-auto whitespace-nowrap">
+          <a href="#quoteForm" className="bg-orange-500 hover:bg-orange-600 text-white font-md py-3 px-8 rounded-[10px] flex items-center mx-auto whitespace-nowrap">
             <p className="mr-2">Get a Quote</p>
             <img src={Right} alt="Next" className="ml-2" />
-          </button>
+          </a>
         </div>
       </div>
     </div>
