@@ -1,0 +1,30 @@
+@import './styles//fonts.css';
+
+
+.custom-bg {
+  background: url("../src/photos/Landing page hero image.png") lightgray center /
+    cover no-repeat;
+}
+
+.custom-gradient {
+  background: linear-gradient(
+    35deg,
+    white 40%,
+    orange 45%,
+    orange 55%,
+    white 60%
+  );
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}

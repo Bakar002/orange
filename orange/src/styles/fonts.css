@@ -1,0 +1,87 @@
+@font-face {
+    font-family: 'Clash Display';
+    font-weight: 100;
+    src: url('../fonts/ClashDisplay-Light.ttf') format('woff2');
+  }
+  
+  @font-face {
+    font-family: 'Clash Display';
+    font-weight: 200;
+    src: url('../fonts/ClashDisplay-Extralight.woff2') format('woff2');
+  }
+  
+  @font-face {
+    font-family: 'Clash Display';
+    font-weight: 300;
+    src: url('../fonts/ClashDisplay-Light.woff2') format('woff2');
+  }
+  
+  @font-face {
+    font-family: 'Clash Display';
+    font-weight: 400;
+    src: url('../fonts/ClashDisplay-Regular.woff2') format('woff2');
+  }
+  
+  @font-face {
+    font-family: 'Clash Display';
+    font-weight: 500;
+    src: url('../fonts/ClashDisplay-Medium.woff2') format('woff2');
+  }
+  
+  @font-face {
+    font-family: 'Clash Display';
+    font-weight: 600;
+    src: url('../fonts/ClashDisplay-Semibold.woff2') format('woff2');
+  }
+  
+  @font-face {
+    font-family: 'Clash Display';
+    font-weight: 700;
+    src: url('../fonts/ClashDisplay-Bold.woff2') format('woff2');
+  }
+  
+
+
+  
+  @font-face {
+    font-family: 'Clash Display';
+    font-weight: 900;
+    src: url('../fonts/ClashDisplay-Variable.woff2') format('woff2');
+  }
+  
+  @font-face {
+    font-family: 'Aeonik';
+    font-weight: 100; /* Thin */
+    src: url('../fonts/aeoniktrial-light.otf') format('opentype');
+  }
+  
+  @font-face {
+    font-family: 'Aeonik';
+    font-weight: 200; /* Extra Light */
+    src: url('../fonts/aeoniktrial-lightitalic.otf') format('opentype');
+  }
+  
+  @font-face {
+    font-family: 'Aeonik';
+    font-weight: 300; /* Light */
+    src: url('../fonts/aeoniktrial-regular.otf') format('opentype');
+  }
+  
+  @font-face {
+    font-family: 'Aeonik';
+    font-weight: 400; /* Regular */
+    src: url('../fonts/aeoniktrial-regularitalic.otf') format('opentype');
+  }
+  
+  @font-face {
+    font-family: 'Aeonik';
+    font-weight: 500; /* Medium */
+    src: url('../fonts/aeoniktrial-bold.otf') format('opentype');
+  }
+  
+  @font-face {
+    font-family: 'Aeonik';
+    font-weight: 600; /* SemiBold */
+    src: url('../fonts/aeoniktrial-bolditalic.otf') format('opentype');
+  }
+  

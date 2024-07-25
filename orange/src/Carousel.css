@@ -1,0 +1,19 @@
+.carousel-wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .carousel .slide img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .carousel .legend {
+    background: rgba(0, 0, 0, 0.75);
+    padding: 10px;
+    color: white;
+    text-align: center;
+    border-radius: 0 0 10px 10px;
+  }
+  
