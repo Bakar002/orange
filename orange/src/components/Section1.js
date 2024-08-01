@@ -8,8 +8,8 @@ import newlogo from "../photos/New logo.svg";
 
 function Section1() {
   return (
-    <div className="w-full  flex items-center flex-col lg:flex-row px-4 md:px-[104px]">
-      <div className="w-full md:w-[50%] text-center md:text-left mt-[16px] 2xl:mt-8 sec-1">
+    <div className="w-full  p-16 flex items-center flex-col lg:flex-row px-4 md:px-[104px]">
+      <div className="w-full md:w-[50%] text-center md:text-left mt-[45px] 2xl:mt-10 sec-1">
       <h1 className="w-full text-black font-clash leading-normal 
               text-[32px] sm:text-[38px] md:text-[42px] lg:text-[48px] xl:text-[52px] 2xl:text-7xl 
               font-semibold mb-[20px]">
@@ -35,12 +35,12 @@ function Section1() {
         </div>
       </div>
 
-      <div className="w-full lg:w-[50%]  mt-[-85px] max-md:mt-[15px] max-lg:mt-[20px] 2xl:mt-0" id="quoteForm">
-        <div className="w-full md:pl-[37px] md:mt-[108px]">
-          <div className="absolute top-0 left-0 w-full  bg-black rounded-[20px] z-0 transform translate-x-2 translate-y-2"></div>
-          <div className="bg-white p-8 rounded-[20px] shadow-lg relative z-10 w-full ">
-            <h2 className="text-xl font-bold text-orange-500 mb-4" >
-              Kickstart your business!!
+      <div className=" w-full lg:w-[50%]  mt-[-85px] max-md:mt-[15px] max-lg:mt-[20px] 2xl:mt-0 " id="quoteForm" >
+        <div className="w-full md:pl-[37px] md:mt-[50px]  ">
+          <div className="absolute top-0 left-0 w-full  bg-black rounded-[20px] z-0 transform translate-x-2 translate-y-2  "></div>
+          <div className="bg-white p-8 shadow-dark rounded-3xl relative z-10 w-full ">
+            <h2 className="text-2xl font-bold text-orange-500 mb-4" >
+              Kickstart <span className="text-black"> your business!! </span>
             </h2>
             <p className="mb-4 text-gray-700">
               Fill in the details below and our team will get back to you in no
@@ -49,7 +49,7 @@ function Section1() {
             <form >
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
-                  <label className="block text-gray-700">Name</label>
+                  <label className="block text-gray-700 font-bold">Name</label>
                   <input
                     type="text"
                     className="w-full p-2 border border-gray-300 rounded mt-1"
@@ -57,7 +57,7 @@ function Section1() {
                   />
                 </div>
                 <div>
-                  <label className="block text-gray-700">Email</label>
+                  <label className="block text-gray-700 font-bold">Email</label>
                   <input
                     type="email"
                     className="w-full p-2 border border-gray-300 rounded mt-1"
@@ -65,7 +65,7 @@ function Section1() {
                   />
                 </div>
                 <div>
-                  <label className="block text-gray-700">Company</label>
+                  <label className="block text-gray-700 font-bold">Company</label>
                   <input
                     type="text"
                     className="w-full p-2 border border-gray-300 rounded mt-1"
@@ -73,7 +73,7 @@ function Section1() {
                   />
                 </div>
                 <div>
-                  <label className="block text-gray-700">Number</label>
+                  <label className="block text-gray-700 font-bold">Number</label>
                   <input
                     type="text"
                     className="w-full p-2 border border-gray-300 rounded mt-1"
@@ -81,7 +81,7 @@ function Section1() {
                   />
                 </div>
                 <div className="md:col-span-2">
-                  <label className="block text-gray-700">Services</label>
+                  <label className="block text-gray-700 font-bold">Services</label>
                   <select className="w-full p-2 border border-gray-300 rounded mt-1">
                     <option>
                       Pick your upgrades! Which of our services excites you?
@@ -92,7 +92,7 @@ function Section1() {
 
               <button
                 type="submit"
-                className="bg-orange-500 text-white py-2 px-4 rounded w-full mt-4"
+                className="bg-orange-500 text-white py-2 px-4 rounded  mt-4"
               >
                 Get a Quote
               </button>

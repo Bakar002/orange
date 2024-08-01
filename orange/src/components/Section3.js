@@ -27,12 +27,12 @@ function Section3() {
           <div className="flex flex-col md:flex-row md:space-y-0 md:space-x-8 md:mx-auto " >
             <div className="flex flex-col space-y-8 mt-[50px] max-sm:gap-y-10">
               <div
-                className=" order-1 w-[360px] max-sm:w-[300px]  lg:w-[450px]  max-sm:h-[350px] h-[265px] bg-[#000000] text-white rounded-lg max-sm:order-2"
+                className=" order-1 w-[360px] max-sm:w-[400px]  lg:w-[450px]  max-sm:h-[270px] h-[265px] bg-[#000000] text-white rounded-lg max-sm:order-2"
                 style={{ backgroundImage: `url(${Noise})` }}
               >
-                <div className="mt-[32px] mb-[32px] ml-[28px] mr-[66px]">
+                <div className="mt-[32px] mb-[32px] ml-[28px] mr-[66px] w-10/12">
                   <img src={frame} alt="E-commerce" className="mb-[28px]" />
-                  <h2 className="text-xl font-bold">
+                  <h2 className="text-xl font-bold w-auto ">
                     Website Design & Development
                   </h2>
                   <p>
@@ -42,7 +42,7 @@ function Section3() {
                 </div>
               </div>
               <div
-                className=" order-2 w-[350px] max-sm:w-[300px] lg:w-[450px] h-[265px] max-sm:h-[350px] bg-[#FF7E00] text-white rounded-lg max-sm:order-1 "
+                className=" order-2 w-[350px] max-sm:w-[400px] lg:w-[450px] h-[265px] max-sm:h-[270px] bg-[#FF7E00] text-white rounded-lg max-sm:order-1 "
                 style={{ backgroundImage: `url(${Noise})` }}
               >
                 <div className="mt-[32px] mb-[32px] ml-[28px] mr-[66px]">
@@ -57,7 +57,7 @@ function Section3() {
             </div>
             <div className="flex flex-col space-y-8 mt-[42px]">
               <div
-                className="order-1 w-[360px] max-sm:w-[300px] lg:w-[450px] h-[265px] max-sm:h-[350px] bg-[#FF7E00] text-white rounded-lg"
+                className="order-1 w-[360px] max-sm:w-[400px] lg:w-[450px] h-[265px] max-sm:h-[270px] bg-[#FF7E00] text-white rounded-lg"
                 style={{ backgroundImage: `url(${Noise})` }}
               >
                 <div className="mt-[32px] mb-[32px] ml-[28px] mr-[66px]">
@@ -70,7 +70,7 @@ function Section3() {
                 </div>
               </div>
               <div
-                className=" order-2 w-[360px] max-sm:w-[300px] lg:w-[450px] h-[265px] max-sm:h-[350px] bg-gray-300 text-white rounded-lg"
+                className=" order-2 w-[360px] max-sm:w-[400px] lg:w-[450px] h-[265px] max-sm:h-[270px] bg-gray-300 text-white rounded-lg"
                 style={{ backgroundImage: `url(${Noise})` }}
               >
                 <div className="mt-[32px] mb-[32px] ml-[28px] mr-[66px]">

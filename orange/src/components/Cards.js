@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { useSwipeable } from "react-swipeable";
 import logo1 from "../photos/log.svg";
 import logo2 from "../photos/THE-HOURS-filled 2 1.png";
@@ -48,12 +48,23 @@ const testimonials = [
 const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+  const [isPaused, setIsPaused] = useState(false);
+  const intervalRef = useRef(null);
 
   useEffect(() => {
     const handleResize = () => setIsMobile(window.innerWidth < 768);
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
+
+  useEffect(() => {
+    if (!isPaused) {
+      intervalRef.current = setInterval(() => {
+        nextSlide();
+      }, 1000);
+    }
+    return () => clearInterval(intervalRef.current);
+  }, [isPaused]);
 
   const nextSlide = () => {
     setCurrentIndex((prevIndex) =>
@@ -87,6 +98,8 @@ const Carousel = () => {
       className="carousel-wrapper h-[555px] sm:h-[465px] relative bg-cover bg-center"
       style={{ backgroundImage: `url(${Noise})` }}
       {...handlers}
+      onMouseEnter={() => setIsPaused(true)}
+      onMouseLeave={() => setIsPaused(false)}
     >
       <div className="max-w-6xl mx-auto pt-8 relative z-10">
         <div className="flex items-center justify-between mb-8">
@@ -125,7 +138,7 @@ const Carousel = () => {
                     index === currentIndex
                       ? "bg-orange-500 text-white shadow-dark"
                       : "bg-white text-black shadow-md"
-                  } rounded-lg`}
+                  } rounded-lg hover:bg-orange-500 hover:text-white transition-transform duration-300 transform hover:scale-105`}
                 >
                   <div className="flex items-center space-x-4 mb-4 font-aeonik">
                     <img

@@ -63,7 +63,7 @@ const projects = [
 
 function ProjectCarousel() {
   return (
-    <div className="bg-stars h-[800px] sm:h-[720px]">
+    <div className="p-8 bg-stars h-[700px] sm:h-[720px]">
       <h2 className="text-center text-white text-3xl sm:text-4xl md:text-5xl font-semibold font-clash pt-[80px] mb-8 sm:mb-[96px]">
         Take a look at the{" "}
         <span className="text-orange-500">latest projects</span> we’ve done.

@@ -5,14 +5,14 @@ import whatsapp from "../icons/whatsapp.svg";
 
 function Header() {
   return (
-    <div className="flex justify-between items-center pt-6 px-4 md:px-[83px]">
+    <div className="flex justify-between items-center pt-2 px-4 md:px-[83px]">
       <div className="flex items-center">
-        <img src={digilligent} alt="App Logo" className="h-12" />
+        <img src={digilligent} alt="App Logo" className="h-18" />
       </div>
       <div className="flex space-x-4">
         
 
-      <a href="#quoteForm" className="bg-orange-500 text-white py-2 px-4 rounded ">
+      <a href="#quoteForm" className="bg-orange-500 text-white py-2 px-6 rounded-md font-clash">
 
           Get a Quote
 
