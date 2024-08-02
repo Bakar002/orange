@@ -1,5 +1,5 @@
 import React from "react";import "react-multi-carousel/lib/styles.css";
-
+import Carousel from "./Cards";
 import image1 from "../photos/sec/image 56.svg";
 import image2 from "../photos/sec/Frame 1171275928 1.svg";
 import image3 from "../photos/sec/image 57.svg";
