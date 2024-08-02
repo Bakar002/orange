@@ -1,6 +1,4 @@
-import React from "react";
-import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
+import React from "react";import "react-multi-carousel/lib/styles.css";
 
 import image1 from "../photos/sec/image 56.svg";
 import image2 from "../photos/sec/Frame 1171275928 1.svg";
