@@ -12,11 +12,12 @@ function Header() {
       <div className="flex space-x-4">
         
 
-      <a href="#quoteForm" className="bg-orange-500 text-white py-2 px-6 rounded-md font-clash">
+      <a href="#quoteForm" className="bg-orange-500 text-white py-2 px-4 rounded-md font-clash md:py-3 md:px-8 lg:py-2 lg:px-10">
 
-          Get a Quote
+  Get a Quote
 
-        </a>
+</a>
+
         <button className="rounded-[6px] bg-[#5BF877] w-10 h-10 flex items-center justify-center">
           <img src={whatsapp} alt="WhatsApp Logo" />
         </button>
