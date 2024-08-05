@@ -1,0 +1,43 @@
+
+.button {
+  background-color: #f97316; /* Tailwind's bg-orange-500 */
+  color: #ffffff; /* Tailwind's text-white */
+  padding: 8px 16px; /* Default padding */
+  border-radius: 6px; /* Tailwind's rounded-md */
+  font-family: 'Clash', sans-serif; /* Tailwind's font-clash */
+  display: block;
+  text-align: center;
+  margin: 0 auto; /* Centers the button */
+  text-decoration: none; /* Removes underline from link */
+}
+
+/* Medium screens and up (min-width: 768px) */
+@media (min-width: 768px) {
+  .button {
+    padding: 12px 24px; /* Tailwind's md:py-3 md:px-6 */
+  }
+}
+
+/* Large screens and up (min-width: 1024px) */
+@media (min-width: 1024px) {
+  .button {
+    padding: 8px 40px; /* Tailwind's lg:py-2 lg:px-10 */
+  }
+}
+
+/* Small screens and up (min-width: 640px) */
+@media (min-width: 640px) {
+  .button {
+    padding: 12px 24px; /* Tailwind's sm:px-6 sm:py-3 */
+  }
+}
+
+/* Extra small screens (max-width: 399px) */
+@media (max-width: 399px) {
+  .button {
+    padding: 10px 30px;
+     /* Tailwind's xs:px-4 xs:py-2 */
+     font-size: 15px; /* Tailwind's text-xs */
+white-space: nowrap;
+  }
+}
