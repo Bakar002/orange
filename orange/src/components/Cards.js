@@ -146,7 +146,7 @@ const Carousel = () => {
                     <img
                       src={testimonial.companyLogo}
                       alt={`${testimonial.name} logo`}
-                      className="w-12 h-12 rounded-full bg-white p-2 max-sm:w-14 max-sm:h-14"
+                      className="w-12 h-12 rounded-full bg-white p-2 max-sm:w-10 max-sm:h-10"
                     />
                     <div>
                       <h3
@@ -164,7 +164,7 @@ const Carousel = () => {
                     </div>
                   </div>
                   <div className="h-[180px] p-4 flex items-center justify-center max-sm:h-[120px] max-sm:p-2 max-sm:px-2">
-                    <p className="testimonial-text text-black text-left text-base sm:text-md md:text-md max-sm:text-md max-sm:leading-tight overflow-hidden">
+                    <p className="testimonial-text text-black text-left text-base sm:text-md md:text-md max-sm:text-sm max-sm:leading-tight overflow-hidden">
                       {testimonial.text}
                     </p>
                   </div>
