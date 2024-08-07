@@ -61,7 +61,7 @@ const Carousel = () => {
     if (!isPaused) {
       intervalRef.current = setInterval(() => {
         nextSlide();
-      }, 1000);
+      }, 3000);
     }
     return () => clearInterval(intervalRef.current);
   }, [isPaused]);
@@ -95,15 +95,15 @@ const Carousel = () => {
 
   return (
     <div
-      className="carousel-wrapper h-[555px] sm:h-[465px] relative bg-cover bg-center"
+      className="carousel-wrapper h-[555px] sm:h-[465px] relative bg-cover bg-center max-sm:h-[430px] "
       style={{ backgroundImage: `url(${Noise})` }}
       {...handlers}
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
     >
-      <div className="max-w-6xl mx-auto pt-8 relative z-10">
-        <div className="flex items-center justify-between mb-8">
-          <h2 className="text-3xl font-clash font-bold ml-0 max-xl:ml-[25px]">
+      <div className="max-w-6xl mx-auto pt-8 relative z-10 max-sm:pt-10 max-sm:">
+        <div className="flex items-center justify-between mb-8 ">
+          <h2 className="text-3xl font-clash font-bold ml-0 max-xl:ml-[25px] ">
             Hear it from our clients
           </h2>
           {!isMobile && (
@@ -123,7 +123,7 @@ const Carousel = () => {
             </div>
           )}
         </div>
-        <div className="">
+        <div className="max-sm:w-11/12 ">
           <div
             className="flex transition-transform duration-300"
             style={{ transform: getTransformValue() }}
@@ -134,17 +134,17 @@ const Carousel = () => {
                 className="w-full md:w-2/5 flex-shrink-0 px-4 font-aeonik"
               >
                 <div
-                  className={`h-full w-full p-4 ${
+                  className={`h-full w-full p-6 ${
                     index === currentIndex
                       ? "bg-orange-500 text-white shadow-dark"
                       : "bg-white text-black shadow-md"
-                  } rounded-lg hover:bg-orange-500 hover:text-white transition-transform duration-300 transform hover:scale-105`}
+                  } rounded-lg hover:bg-orange-500 hover:text-white transition-transform duration-300 transform hover:scale-105 max-sm:px-2 max-sm:py-4`}
                 >
-                  <div className="flex items-center space-x-4 mb-4 font-aeonik">
+                  <div className="flex items-center space-x-4 mb-4 font-aeonik max-sm:space-x-2">
                     <img
                       src={testimonial.companyLogo}
                       alt={`${testimonial.name} logo`}
-                      className="w-12 h-12 rounded-full bg-white p-2"
+                      className="w-12 h-12 rounded-full bg-white p-2 max-sm:w-14 max-sm:h-14 "
                     />
                     <div>
                       <h3
@@ -152,18 +152,21 @@ const Carousel = () => {
                           index === currentIndex
                             ? "text-white"
                             : "text-orange-500"
-                        } text-xl font-bold`}
+                        } text-xl font-bold max-sm:text-xl`}
                       >
                         {testimonial.name}
                       </h3>
-                      <p className="text-sm text-black">{testimonial.title}</p>
+                      <p className="text-sm text-black max-sm:text-lg">
+                        {testimonial.title}
+                      </p>
                     </div>
                   </div>
-                  <div className="h-[180px] p-4 flex items-center justify-center">
-                    <p className="text-black text-left text-base sm:text-md md:text-md overflow-hidden">
-                      {testimonial.text}
-                    </p>
-                  </div>
+                  <div className="h-[180px] p-4 flex items-center justify-center max-sm:h-[100px] max-sm:p-0 max-sm:px-2">
+  <p className="text-black text-left text-base sm:text-md md:text-md max-sm:text-sm max-sm:leading-tight overflow-hidden">
+    {testimonial.text}
+  </p>
+</div>
+
                 </div>
               </div>
             ))}

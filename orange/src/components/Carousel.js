@@ -69,7 +69,7 @@ function ProjectCarousel() {
         Take a look at the{" "}
         <span className="text-orange-500">latest projects</span> we’ve done.
       </h2>
-      <div className="mx-auto w-full max-w-7xl mb-8 sm:mb-[113px]">
+      <div className="mx-auto w-full max-w-7xl mb-0 sm:mb-[113px] ">
         <Carousel
           responsive={responsive}
           infinite={true}
