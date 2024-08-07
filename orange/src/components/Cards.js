@@ -95,8 +95,13 @@ const Carousel = () => {
 
   return (
     <div
-      className="carousel-wrapper h-[555px] sm:h-[465px] relative bg-cover bg-center max-sm:h-[430px] "
-      style={{ backgroundImage: `url(${Noise})` }}
+    className="carousel-wrapper h-[555px] sm:h-[465px] relative bg-cover bg-center max-sm:h-[430px]"
+    style={{
+      backgroundImage: `linear-gradient(to left bottom, rgba(255, 140, 0, 0.9) 20%, rgba(255, 140, 0, 0.5) 30%, transparent 40%), url(${Noise})`,
+    }}
+  
+
+
       {...handlers}
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
@@ -140,7 +145,7 @@ const Carousel = () => {
                       : "bg-white text-black shadow-md"
                   } rounded-lg hover:bg-orange-500 hover:text-white transition-transform duration-300 transform hover:scale-105 max-sm:px-2 max-sm:py-4`}
                 >
-                  <div className="flex items-center space-x-4 mb-4 font-aeonik max-sm:space-x-2">
+                  <div className="flex items-center space-x-4 mb-4 font-aeonik max-sm:space-x-1">
                     <img
                       src={testimonial.companyLogo}
                       alt={`${testimonial.name} logo`}
@@ -156,13 +161,13 @@ const Carousel = () => {
                       >
                         {testimonial.name}
                       </h3>
-                      <p className="text-sm text-black max-sm:text-lg">
+                      <p className="text-sm text-black max-sm:text-md">
                         {testimonial.title}
                       </p>
                     </div>
                   </div>
-                  <div className="h-[180px] p-4 flex items-center justify-center max-sm:h-[100px] max-sm:p-0 max-sm:px-2">
-  <p className="text-black text-left text-base sm:text-md md:text-md max-sm:text-sm max-sm:leading-tight overflow-hidden">
+                  <div className="h-[180px] p-4 flex items-center justify-center max-sm:h-[120px] max-sm:p-2 max-sm:px-2">
+  <p className="text-black text-left text-base sm:text-md md:text-md max-sm:text-md max-sm:leading-tight overflow-hidden">
     {testimonial.text}
   </p>
 </div>
