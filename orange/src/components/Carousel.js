@@ -1,5 +1,4 @@
 import React from "react";
-
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 
@@ -64,12 +63,12 @@ const projects = [
 
 function ProjectCarousel() {
   return (
-    <div className="p-8 bg-stars h-[700px] sm:h-[720px]">
-      <h2 className="text-center text-white text-3xl sm:text-4xl md:text-5xl font-semibold font-clash pt-[80px] mb-8 sm:mb-[96px]">
+    <div className="p-8 bg-stars h-[500px] sm:h-[720px] overflow-visible">
+      <h2 className="text-center text-white text-3xl sm:text-4xl md:text-5xl font-semibold font-clash pt-[40px] mb-8 sm:mb-[56px]">
         Take a look at the{" "}
         <span className="text-orange-500">latest projects</span> we’ve done.
       </h2>
-      <div className="mx-auto w-full max-w-7xl mb-0 sm:mb-[113px] ">
+      <div className="mx-auto w-full  max-w-7xl mb-0 sm:mb-[113px] overflow-visible">
         <Carousel
           responsive={responsive}
           infinite={true}
@@ -79,33 +78,36 @@ function ProjectCarousel() {
           showDots={true}
           arrows={true}
           renderButtonGroupOutside={false}
-          className="carousel-wrapper"
+          className="carousel-wrapper p-14"
           removeArrowOnDeviceType={["tablet", "mobile"]}
           swipeable={true}
           draggable={true}
         >
-          {projects.map((project, index) => (
-            <div
-              key={index}
-              className="relative px-4 transform transition-transform duration-300 hover:scale-105"
-            >
-              <img
-                src={project.image}
-                alt={project.name}
-                className="rounded-lg w-[617px] h-[372px] object-cover shadow-lg"
+        {projects.map((project, index) => (
+          <div
+            key={index}
+            className="rounded-2xl relative px-6 transform transition-transform duration-300 hover:-rotate-45 hover:z-10"
+            style={{ overflow: 'visible' }}
+          >
+            <img
+              src={project.image}
+              alt={project.name}
+              className=" rounded-2xl w-[375px] h-[320px] object-contain shadow-lg p-10 "
+              style={{ borderRadius: '2rem', transformOrigin: 'center center' }}
               />
-              <div
-                className="absolute bottom-0 left-0 w-full p-4 rounded-b-lg text-white text-left"
-                style={{
-                  background:
-                    "linear-gradient(to top, rgba(0, 0, 10, 0.7), transparent)",
-                }}
-              >
-                <h3 className="text-xl font-semibold pl-8 font-aeonik">{project.name}</h3>
-                <p className="text-sm pl-8 font-aeonik">{project.detail}</p>
-              </div>
+            <div
+              className="absolute bottom-0 left-0 w-full p-4 rounded-b-lg text-white text-left"
+              style={{
+                background:
+                  "linear-gradient(to top, rgba(0, 0, 10, 0.7), transparent)",
+              }}
+            >
+              <h3 className="text-xl font-semibold pl-8 font-aeonik">{project.name}</h3>
+              <p className="text-sm pl-8 font-aeonik">{project.detail}</p>
             </div>
-          ))}
+          </div>
+        ))}
+
         </Carousel>
       </div>
     </div>

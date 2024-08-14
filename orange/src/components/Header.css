@@ -28,7 +28,7 @@
 /* Small screens and up (min-width: 640px) */
 @media (min-width: 640px) {
   .button {
-    padding: 12px 24px; /* Tailwind's sm:px-6 sm:py-3 */
+    padding: 8px 34px; /* Tailwind's sm:px-6 sm:py-3 */
   }
 }
 

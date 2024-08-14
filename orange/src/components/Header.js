@@ -12,7 +12,7 @@ function Header() {
       </div>
       <div className="flex space-x-4">
         
-      <a href="#quoteForm" class="button">
+      <a href="#quoteForm" class="button ">
   Get a Quote
 </a>
 
