@@ -78,7 +78,7 @@ function ProjectCarousel() {
           showDots={true}
           arrows={true}
           renderButtonGroupOutside={false}
-          className="carousel-wrapper p-14"
+          className="carousel-wrapper p-14 md:p-7 sm:p-0 max-sm:p-0"
           removeArrowOnDeviceType={["tablet", "mobile"]}
           swipeable={true}
           draggable={true}
