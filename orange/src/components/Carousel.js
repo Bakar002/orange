@@ -64,11 +64,11 @@ const projects = [
 function ProjectCarousel() {
   return (
     <div className="p-8 bg-stars h-[500px] sm:h-[720px] overflow-visible">
-      <h2 className="text-center text-white text-3xl sm:text-4xl md:text-5xl font-semibold font-clash pt-[40px] mb-8 sm:mb-[56px]">
+      <h2 className="text-center text-white text-3xl sm:text-4xl md:text-5xl font-semibold font-clash pt-[40px] mb-8 sm:mb-[56px] max-sm:mb-0">
         Take a look at the{" "}
         <span className="text-orange-500">latest projects</span> we’ve done.
       </h2>
-      <div className="mx-auto w-full  max-w-7xl mb-0 sm:mb-[113px] overflow-visible">
+      <div className="mx-auto w-full  max-w-7xl mb-0 sm:mb-[113px] overflow-visible ">
         <Carousel
           responsive={responsive}
           infinite={true}
